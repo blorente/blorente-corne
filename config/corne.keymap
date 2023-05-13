@@ -27,12 +27,12 @@
                 };
                 lower_layer {
 //                        -----------------------------------------------------------------------------------------
-//                        |      | VX  |  F  | ALT        | LGUI |     |   |  RALT(<)  |  LGUI([)   |  LGUI(])  | RALT(>) |  0  | BKSP |
-//                        |      | V+  |     | RALT(BSPC) |      |     |   | LFT       |    DWN     |    UP     | RGT |     |      |
-//                        |      | V-  | BT0 | BT1        | BT2  |     |   |           | RALT(BSPC) |           |     |     |      |
+//                        |      | VX  |  F  | ALT        | LGUI |     |   | XRALT(<)  |  LGUI([)   |  LGUI(])  | XRALT(>) |  0  | BKSP |
+//                        |      | V+  |     | RALT(BSPC) |      |     |   | LFT       |    DWN     |    UP     | RGT      |     |      |
+//                        |      | V-  | BT0 | BT1        | BT2  |     |   |           | RALT(BSPC) |           |          |     |      |
 //                                           | GUI        |      | SPC |   | ENT       |            |   ALT     |
                         bindings = <
-   &trans &kp C_MUTE     &kp F        &kp RAL      &kp LGUI     &trans      &kp trans   &kp LGUI(LBRK) &kp LGUI(RBRK)    &kp trans         &kp N0 &kp BSPC
+   &trans &kp C_MUTE     &kp F        &kp RAL      &kp LGUI     &trans      &kp trans      &kp LGUI(LBRK) &kp LGUI(RBRK)    &kp trans         &kp N0 &kp BSPC
    &trans &kp C_VOL_UP   &trans       &trans       &trans       &trans      &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT         &trans &trans
    &trans &kp C_VOL_DOWN &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans      &trans         &kp RA(BSPC)   &trans         &trans            &trans &trans
                                       &kp LGUI     &trans       &kp SPACE   &kp RET        &trans         &kp RALT
